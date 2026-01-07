@@ -243,9 +243,9 @@
                 <input type="file" id="fileInput" accept="image/*" style="display:none" onchange="handleFileUpload(this)">
                 <button onclick="document.getElementById('fileInput').click()">📁 Upload File</button>
                 
-                <button class="secondary" onclick="addFromUrl()">🌐 Add from URL</button>
+                <button class="secondary" onclick="addFromUrl()">Add from URL</button>
                 
-                <button class="action-btn" onclick="downloadAlbumZip()">💾 Download Album (.zip)</button>
+                <button class="action-btn" onclick="downloadAlbumZip()">Download Album (.zip)</button>
             </div>
         </div>
 
@@ -353,9 +353,9 @@
                 card.innerHTML = `
                     <img src="${img.data}" alt="Gallery Image">
                     <div class="img-actions">
-                        <button class="img-btn" onclick="openEditor(${index})" title="Edit">✏️</button>
-                        <button class="img-btn" onclick="downloadSingle(${index})" title="Download">⬇️</button>
-                        <button class="img-btn" onclick="deleteImage(${index})" title="Delete" style="color:#cf6679">🗑️</button>
+                        <button class="img-btn" onclick="openEditor(${index})" title="Edit">Edit</button>
+                        <button class="img-btn" onclick="downloadSingle(${index})" title="Download">Download</button>
+                        <button class="img-btn" onclick="deleteImage(${index})" title="Delete" style="color:#cf6679">Move to trash</button>
                     </div>
                 `;
                 grid.appendChild(card);
